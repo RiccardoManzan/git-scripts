@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo pushing current branch to origin/$(git branch --show-current)...
+git push --set-upstream origin $(git branch --show-current)
+echo done!
